@@ -1,0 +1,45 @@
+.about-info {
+	h5 {
+		font-size: 1.2em;
+		line-height: 150%;
+		
+		@include breakpoint(tablet) {
+			font-size: 1.5em;
+		}
+
+		+ h5 {
+			margin-top: 20px;
+		}
+	}
+}
+
+.certificates {
+	.certificate-content {
+		.image-wrapper {
+			max-width: 80%;
+			margin: 0 auto;
+
+			+ .image-wrapper {
+				margin-top: 30px;
+				
+				@include breakpoint(tablet) {
+					margin-top: 100px;
+				}
+				
+				@include breakpoint(widee) {
+					margin-top: 120px;
+				}
+			}
+		}
+
+		[class*="col-"] {
+			+ [class*="col-"] {
+				margin-top: 30px;
+				
+				@include breakpoint(tablet) {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+}

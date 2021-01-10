@@ -1,0 +1,61 @@
+.pagination {
+	.page-item {
+		margin: 0 4px;
+
+		&.disabled {
+			.page-link {
+				opacity: 0.6;
+				background-color: $dark-black;
+			}
+		}
+
+		&.active {
+			.page-link {
+				color: $dark-black;
+				background-color: $yellow;
+				
+				&:hover {
+					@include breakpoint(desktop) {
+						color: $dark-black;
+						background-color: $yellow;
+					}
+				}
+			}
+		}
+
+		.page-link {
+			font-family: 'barlow_bold';
+			color: $grey;
+			text-align: center;
+			line-height: 30px;
+			padding: 0;
+			width: 30px;
+			height: 30px;
+			background-color: $dark-grey;
+			border: 0;
+			border-radius: 100%;
+			
+			@include breakpoint(wide) {
+				font-size: 1.2em;
+				width: 34px;
+				height: 34px;
+				line-height: 34px;
+			}
+
+			&:hover {
+				@include breakpoint(desktop) {
+					color: $yellow;
+				}
+			}
+
+			i {
+				font-size: 1.4em;
+				line-height: 30px;
+
+				@include breakpoint(wide) {
+					line-height: 34px;
+				}
+			}
+		}
+	}
+}

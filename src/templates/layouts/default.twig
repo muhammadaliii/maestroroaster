@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="robots" content="index, follow" />
+		<title>{{ head_title }} • Maestro Roaster</title>
+		<meta name="description" content="Experienced Web Designer and Front-end Developer based on Jakarta, Indonesia.">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="twitter:card" content="summary_large_image"/>
+		<meta name="twitter:site" content="@aliaraaab"/>
+		<meta name="twitter:creator" content="@aliaraaab" />
+		<meta name="twitter:description" content="Experienced Web Designer and Front-end Developer based on Jakarta, Indonesia."/>
+		<meta name="twitter:image:src" content="https://muhammadaliii.github.io/assets/img/cover-small.jpg?w=650"/>
+		<meta name="keyword" content="resume, cv, programmer, developer, front-end, designer, logo, muhammad ali, freelance, inspiration, jakarta, indonesia">
+		<meta property="article:author" content="https://www.facebook.com/muhammadalialaydruss" itemprop="author"/>
+		<meta property="article:publisher" content="https://www.facebook.com/muhammadalialaydruss"/>
+		<meta property="og:site_name" content="Maestro Roaster"/>
+		<meta property="og:title" content="Maestro Roaster"/>
+		<meta property="og:url" content="https://muhammadaliii.github.io/"/>
+		<meta property="og:description" content="Experienced Web Designer and Front-end Developer based on Jakarta, Indonesia." >
+		<meta property="og:image" content="https://muhammadaliii.github.io/assets/img/cover-small.jpg?w=650"/>
+		<meta property="og:image:width" content="650" />
+		<meta property="og:image:height" content="366" />
+		<meta property="og:type" content="website" />
+		<link rel="canonical" href="https://muhammadaliii.github.io/"/>
+		<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+		<link rel="manifest" href="./site.webmanifest">
+		<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#111111">
+		<meta name="msapplication-TileColor" content="#111111">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body{% if body_class is defined and body_class is not empty %} class="{{ body_class }}" id="{{ body_class }}" {% endif %}>
+		<header class="header-fix">
+			<div class="container-fluid">
+				<nav class="header-menu">
+					<div class="header-left show-desktop">
+						<ul class="menu flat" data-aos="fade-right">
+							<li>
+								<a class="font-primary-medium" href="about.html">About</a>
+							</li>
+							<li>
+								<a class="font-primary-medium" href="product.html">Product</a>
+							</li>
+							<li>
+								<a class="font-primary-medium" href="supply.html">Supply</a>
+							</li>
+							<li>
+								<a class="font-primary-medium" href="gallery.html">Gallery</a>
+							</li>
+						</ul>
+					</div>
+					<div class="header-logo">
+						<h1 class="brand-logo" data-aos="zoom-in" data-aos-delay="300">
+							<a href="index.html">
+								<span class="logo"></span>
+								<strong class="font-text-bold">Maestro Roaster</strong>
+							</a>
+						</h1>
+					</div>
+					<div class="header-right show-desktop">
+						<ul class="menu flat" data-aos="fade-left">
+							<li>
+								<a class="font-primary-medium" href="customer.html">Customer</a>
+							</li>
+							<li>
+								<a class="font-primary-medium" href="knowledge.html">Knowledge</a>
+							</li>
+							<li>
+								<a class="font-primary-medium" href="contact.html">Contact</a>
+							</li>
+						</ul>
+					</div>
+					<div class="header-mobile show-mobile">
+						<div class="toggle-down">
+							<div class="menu-toggle-btn" data-aos="fade-left" data-aos-delay="300">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+						<ul class="menu flat">
+							<li data-aos="fade-left">
+								<a class="font-primary-medium" href="about.html">About</a>
+							</li>
+							<li data-aos="fade-left">
+								<a class="font-primary-medium" href="product.html">Product</a>
+							</li>
+							<li data-aos="fade-left">
+								<a class="font-primary-medium" href="supply.html">Supply</a>
+							</li>
+							<li data-aos="fade-left">
+								<a class="font-primary-medium" href="gallery.html">Gallery</a>
+							</li>
+							<li data-aos="fade-left">
+								<a class="font-primary-medium" href="customer.html">Customer</a>
+							</li>
+							<li data-aos="fade-left">
+								<a class="font-primary-medium" href="knowledge.html">Knowledge</a>
+							</li>
+							<li data-aos="fade-left">
+								<a class="font-primary-medium" href="contact.html">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main id="main">
+{% block page %}{% endblock %}
+		</main>
+{% include '../partials/footer.twig' %}
+		<script src="js/vendor.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/main.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,159 @@
+:focus {
+	outline: 0;
+}
+
+html {
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+
+	&.no-scroll {
+		overflow: hidden;
+	}
+}
+
+body {
+	font-family: 'barlow_regular';
+	color: $body-color;
+	background-color: $body-background;
+
+	&.no-scroll {
+		overflow: hidden;
+	}
+}
+
+main {
+	&:focus {
+		outline: 0;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: $white;
+	transition: all 0.3s linear;
+
+	&:hover {
+		text-decoration: none;
+		color: $yellow;
+	}
+}
+
+h3,
+h4,
+h5 {
+	line-height: 120%;
+}
+
+p {
+	font-size: 1.2em;
+	line-height: 130%;
+	margin: 0;
+	
+	@include breakpoint(wide) {
+		font-size: 1.4em;
+	}
+
+	+ p {
+		margin-top: 10px;
+	}
+}
+
+ul,
+ol {
+	margin: 0;
+
+	&.flat {
+		li {
+			display: inline-block;
+			margin: 0 8px 0 0;
+		}
+	}
+}
+
+.container {
+	padding: 0 16px;
+
+	@include breakpoint(tablet) {
+		padding: 0;
+	}
+
+	@include breakpoint(large-desktop) {
+		max-width: 1200px;
+	}
+
+	@include breakpoint(imac) {
+		max-width: 1400px;
+	}
+}
+
+.container-fluid {
+	@include breakpoint(tablet) {
+		padding: 0 30px;
+	}
+
+	@include breakpoint(desktop) {
+		padding: 0 60px;
+	}
+
+	&.full-width {
+		padding: 0;
+	}
+}
+
+section {
+	overflow: hidden;
+	padding: 50px 0;
+	
+	@include breakpoint(wide) {
+		padding: 100px 0;
+	}
+
+	&.hiding {
+		display: none;
+	}
+	
+	&.cover,
+	&.cover-top {
+		padding: 0;
+		margin-bottom: 30px;
+		
+		@include breakpoint(wide) {
+			margin-bottom: 50px;
+		}
+	}
+
+	&.knowledge-content {
+		@include breakpoint(tablet) {
+			padding: 20px 0;
+		}
+	
+		@include breakpoint(wide) {
+			padding: 50px 0;
+		}
+	}
+
+	&.customer-content,
+	&.home-download {
+		padding: 20px 0;
+
+		@include breakpoint(tablet) {
+			padding: 40px 0;
+		}
+	}
+}
+
+.show-mobile {
+	display: block!important;
+
+	@include breakpoint(wide) {
+		display: none!important;
+	}
+}
+
+.show-desktop {
+	display: none!important;
+
+	@include breakpoint(wide) {
+		display: block!important;
+	}
+}

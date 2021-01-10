@@ -1,0 +1,149 @@
+.form {
+	.form-control {
+		color: $white;
+		font-size: 1em;
+		padding: 8px 12px;
+		height: auto;
+		border: 0;
+		background-color: $dark-grey;
+		outline: 0;
+		border-radius: 0;
+
+		@include breakpoint(tablet) {
+			padding: 10px 16px;
+		}
+
+
+		&:focus {
+			box-shadow: none;	
+		}
+	}
+
+	textarea {
+		&.form-control {
+			height: 160px;
+			resize: none;
+		}
+	}
+
+	::-webkit-input-placeholder {
+		color: $grey;
+	}
+
+	:-moz-placeholder {
+		color: $grey;
+	}
+
+	::-moz-placeholder {
+		color: $grey;
+	}
+
+	:-ms-input-placeholder {  
+		color: $grey;
+	}
+
+	.form-group {
+		position: relative;
+		margin: 0;
+
+		+.form-group {
+			margin-top: 10px;
+			
+			@include breakpoint(tablet) {
+				margin-top: 16px;
+			}
+		}
+
+		+.button-area {
+			margin-top: 20px;
+			
+			@include breakpoint(tablet) {
+				margin-top: 30px;
+			}
+		}
+
+		&[class*="col-"] {
+			padding: 8px 0;
+			
+			@include breakpoint(tablet) {
+				padding: 10px;
+			}
+
+			+ .form-group {
+				margin: 0;
+			}
+
+			&.button-area {
+				margin-top: 20px;
+			}
+
+			.help-block {
+				top: 12px;
+				
+				@include breakpoint(tablet) {
+					top: 12px;
+					right: 10px;
+				}
+			}
+		}
+
+		&.has-error {
+			.form-control {
+				background-color: #8a1c1c;
+			}
+
+			::-webkit-input-placeholder {
+				color: $white;
+			}
+
+			:-moz-placeholder {
+				color: $white;
+			}
+
+			::-moz-placeholder {
+				color: $white;
+			}
+
+			:-ms-input-placeholder {  
+				color: $white;
+			}
+
+			.icon-down {
+				color: $white;
+			}
+		}
+
+		.help-block {
+			color: $yellow;
+			margin: 0;
+			font-weight: normal;
+			font-size: 0.65em;
+			pointer-events: none;
+			position: absolute;
+			top: 6px;
+			right: 0;
+			bottom: initial;
+			left: initial;
+			letter-spacing: 0.2pt;
+			
+			@include breakpoint(tablet) {
+				font-size: 0.8em;
+				top: 3px;
+			}
+		}
+
+		label {
+			font-family: 'barlow_medium';
+			font-size: 1em;
+			text-transform: uppercase;
+			letter-spacing: 1pt;
+			line-height: 100%;
+			padding: 0;
+			margin-bottom: 8px;
+			
+			@include breakpoint(tablet) {
+				font-size: 1.1em;
+			}
+		}
+	}
+}

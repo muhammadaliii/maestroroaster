@@ -1,0 +1,92 @@
+.supply-content {
+	.container {
+		@include breakpoint(desktop) {
+			max-width: 1000px;
+		}
+	}
+
+	.thumbnail-list {
+		&:nth-child(2n+2) {
+			.thumbnail-col {
+				.wrapper {
+					@include breakpoint(tablet) {
+						padding-left: 10px;
+						padding-right: 0;
+					}
+
+					@include breakpoint(wide) {
+						padding-left: 50px;
+					}
+				}
+			}
+		}
+
+		.thumbnail-col {
+			.wrapper {
+				@include breakpoint(tablet) {
+					padding-right: 10px;
+				}
+
+				@include breakpoint(wide) {
+					padding-right: 50px;
+				}
+			}
+		}
+
+		.subtitle {
+			h4 {
+				font-size: 1.9em;
+				
+				@include breakpoint(tablet) {
+					font-size: 2.8em;
+				}
+			}
+
+			h5 {
+				font-size: 1.1em;
+				
+				@include breakpoint(tablet) {
+					font-size: 1.4em;
+				}
+			}
+		}
+
+		.image-area {
+			border-radius: 0;
+
+			img {
+				padding-bottom: 30px;
+				object-fit: contain;
+				
+				@include breakpoint(wide) {
+					padding-bottom: 50px;
+				}
+			}
+
+			.circle-bg {
+				position: absolute;
+				z-index: -1;
+				top: initial;
+				bottom: 0;
+				left: 50%;
+				right: initial;
+				width: 80%;
+				height: 80%;
+				// background-color: $semi-grey;
+				background-color: $grey;
+				margin-left: -40%;
+				border-radius: 100%;
+			}
+		}
+	}
+
+	.field-title {
+		+ .field-area {
+			margin-top: 30px;
+		
+			@include breakpoint(tablet) {
+				margin-top: 50px;
+			}
+		}
+	}
+}

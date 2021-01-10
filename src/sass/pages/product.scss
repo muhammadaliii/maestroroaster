@@ -1,0 +1,67 @@
+.specification-product {
+	.container {
+		@include breakpoint(mobile) {
+			padding: 0;
+		}
+	}
+
+	.field-title {
+		@include breakpoint(mobile) {
+			padding: 0 16px;
+		}
+	}
+
+	.side-left {
+		.wrapper {
+			@include breakpoint(wide) {
+				padding-right: 25px;
+			}
+		}
+	}
+
+	.side-right {
+		.wrapper {
+			@include breakpoint(wide) {
+				padding-left: 25px;
+			}
+		}
+	}
+
+	.specification-list {
+		padding: 0;
+		list-style: none;
+
+		li {
+			padding: 10px 16px;
+			background-color: $dark-black;
+			
+			@include breakpoint(tablet) {
+				padding: 14px 20px;
+			}
+
+			&:nth-child(2n+2) {
+				background-color: $dark-grey;
+			}
+		}
+
+		p {
+			font-size: 1em;
+			
+			@include breakpoint(tablet) {
+				font-size: 1.2em;
+			}
+		}
+
+		.specification-text {
+			color: $white;
+			text-align: right;
+
+			strong {
+				font-weight: normal;
+				color: $yellow;
+				display: block;
+				margin-top: 2px;
+			}
+		}
+	}
+}

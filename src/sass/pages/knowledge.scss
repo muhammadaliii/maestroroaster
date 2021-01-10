@@ -1,0 +1,15 @@
+.faq-content {
+	.container {
+		@include breakpoint(mobile) {
+			padding: 0;
+		}
+	}
+
+	.title {
+		padding: 0 16px;
+		
+		@include breakpoint(tablet) {
+			padding: 0;
+		}
+	}
+}

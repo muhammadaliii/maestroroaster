@@ -1,0 +1,97 @@
+/**
+ * Variables
+ */
+
+ // FONT FAMILY
+$font_idx: 1;
+$font_default: Helvetica, Arial, sans-serif !default;
+$font-path:	"../assets/fonts" !default;
+
+// Fonts
+$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-size-base: 14px;
+$line-height-base: 1.5;
+
+// Transition
+$transition-base: all .3s ease-in-out;
+
+/**
+ * Typography Variables
+ */
+
+// Paragraph
+$paragraph-margin-bottom: 1rem;
+
+// Headings
+$headings-margin-bottom: 0;
+$headings-font-family: $font-family;
+$headings-font-weight: 500;
+$headings-line-height: inherit;
+$headings-color: inherit;
+
+// Headings Font Size
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+// Links
+$link-color: #007bff;
+$link-decoration: none;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: underline;
+
+// Media Query
+$media-query:
+	(imac-retina, (min-width: 2048px)),
+	(imac-large, (min-width: 1920px)),
+	(imac, (min-width: 1700px)),
+	(large-desktop, (min-width: 1500px)),
+	(laptop, (min-width: 1366px)),
+	(wide-laptop, (min-width: 1441px)),
+	(height-laptop, (max-height: 1200px)),
+	(desktop, (min-width: 1200px)),
+	(height-imac, (min-height: 1010px)),
+	(height-desktop, (min-height: 850px)),
+	(wide, (min-width: 992px)),
+	(width-tablet-landscape, (max-width: 1024px)),
+	(width-tablet, (max-width: 992px)),
+	(width-tablet-portrait, (max-width: 768px)),
+	(tablet, (min-width: 768px)),
+	(mobile, (max-width: 767px)),
+	(mobile-iphone, (max-width: 376px)),
+	(small-mobile, (max-width: 360px));
+
+// Default color
+$white: #FFFFFF;
+$white-smoke: #ECECEC;
+$black: #000000;
+$yellow: #f6e700;
+$brown: #BA873F;
+$grey: #999999;
+$semi-grey: #D8D8D8;
+$green: #2bb673;
+$dark-grey: #313131;
+$dark-black: #111111;
+$semi-black: #1A1A1A;
+$transparent: transparent;
+
+// Themes color
+$body-color: $grey;
+$body-color-alt: $white;
+$button-color: $yellow;
+$body-background: $semi-black;
+$body-background-alt: $white-smoke;
+
+// Social Media
+$facebook: #5d82d1;
+$twitter: #40bff5;
+$gplus: #d95946;
+$pinterest: #bd081c;
+$whatsapp: #5CB100;
+$youtube: #FF0000;
+$github: #24292e;
+$gitlab: #e65328;
+$linkedin: #0d66c2;

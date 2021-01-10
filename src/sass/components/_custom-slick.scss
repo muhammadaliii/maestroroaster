@@ -1,0 +1,111 @@
+.slick-dotted {
+	&.slick-slider {
+		padding-bottom: 30px;
+		margin: 0;
+	}
+}
+
+.slick-dots {
+	bottom: 0;
+    z-index: 2;
+	
+	li {
+		width: auto;
+		height: auto;
+		vertical-align: middle;
+		margin: 0 3px;
+		transition: all 0.3s linear;
+		
+		@include breakpoint(tablet) {
+			margin: 0 4px;
+		}
+
+		&.slick-active {
+			button {
+				width: 20px;
+				background-color: $yellow;
+				border-radius: 20px;
+			}
+		}
+
+		button {
+			width: 6px;
+			height: 6px;
+			background-color: $dark-grey;
+			padding: 0;
+			border-radius: 100%;
+			transition: all 0.3s linear;
+			
+			@include breakpoint(tablet) {
+				width: 8px;
+				height: 8px;
+			}
+
+			&:before {
+				display: none;
+			}
+		}
+	}
+}
+
+.button-arrow {
+	cursor: pointer;
+	padding: 0;
+	outline: 0;
+	z-index: 4;
+	width: 36px;
+	height: 36px;
+	position: absolute;
+	top: 50%;
+	bottom: initial;
+	left: initial;
+	right: initial;
+	background-color: transparent;
+	box-shadow: none;
+	transition: all 0.3s linear;
+	transform: translate(0, -50%);
+
+	@include breakpoint(tablet) {
+		width: 48px;
+		height: 48px;
+	}
+	
+	@include breakpoint(desktop) {
+		opacity: 0.8;
+	}
+
+	&:focus {
+		outline: 0;
+		box-shadow: none;
+	}
+
+	&:hover {
+		@include breakpoint(desktop) {
+			opacity: 1;
+		}
+	}
+
+	&.prev-arrow {
+		left: 0;
+		background-image: url('../assets/img/icon-arrow-left.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		border-radius: 100%;
+	}
+
+	&.next-arrow {
+		right: 0;
+		background-image: url('../assets/img/icon-arrow-right.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		border-radius: 100%;
+	}
+
+	&.slick-disabled {
+		opacity: 0;
+		pointer-events: none;
+	}
+}
+

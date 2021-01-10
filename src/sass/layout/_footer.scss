@@ -1,0 +1,345 @@
+footer {
+	position: relative;
+	z-index: 1;
+	margin-top: 40px;
+	background-color: $dark-black;
+	
+	@include breakpoint(tablet) {
+		margin-top: 50px;
+	}
+	
+	a {
+		color: $white;
+
+		&:focus {
+			color: $yellow;
+		}
+
+		&:hover {
+			@include breakpoint(desktop) {
+				color: $yellow;
+			}
+		}
+	}
+
+	h6 {
+		color: $white;
+	}
+
+	ul {
+		padding: 0;
+		list-style: none;
+
+		li {
+			margin: 0;
+
+			+ li {
+				@include breakpoint(tablet) {
+					margin: 6px 0 0;
+				}
+			}
+
+			i {
+				vertical-align: middle;
+				font-size: 1.4em;
+				
+				+ span {
+					margin: 0 0 0 8px;
+					
+					@include breakpoint(tablet) {
+						margin: 0 0 0 6px;
+					}
+				}
+			}
+
+			span {
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+	}
+
+	.nav-top {
+		padding: 40px 0;
+		
+		@include breakpoint(tablet) {
+			padding: 60px 0;
+		}
+	}
+
+	.row {
+		[class*='col-'] {
+			+ [class*='col-'] {
+				margin: 20px 0 0;
+				
+				@include breakpoint(tablet) {
+					margin: 0;
+				}
+			}
+
+			&.phone-email {
+				@include breakpoint(tablet) {
+					margin-top: 0;
+				}
+			}
+		}
+
+		.col-lg-6 {
+			+ .col-lg-6 {
+				@include breakpoint(tablet) {
+					margin: 20px 0 0;
+				}
+
+				@include breakpoint(wide) {
+					margin: 0;
+				}
+			}
+		}
+	}
+
+	.footer-logo {
+		figure {
+			max-width: 50%;
+			margin: 0 auto;
+			
+			@include breakpoint(tablet) {
+				max-width: 60%;
+				margin: 0;
+			}
+			
+			@include breakpoint(wide) {
+				max-width: 80%;
+			}
+		}
+
+		+ .address {
+			margin-top: 30px;
+		}
+	}
+
+	.address {
+		position: relative;
+		padding: 0 0 0 30px;
+		
+		@include breakpoint(tablet) {
+			padding: 0 0 0 26px;
+		}
+		
+		+ .address {
+			margin-top: 20px;
+		}
+		
+		+ .phone {
+			margin-top: 20px;
+		}
+
+		i {
+			font-size: 1.4em;
+			color: $white;
+			position: absolute;
+			top: 2px;
+			left: 0;
+			bottom: initial;
+			right: initial;
+		}
+	}
+
+	address {
+		margin: 0;
+		line-height: 140%;
+	}
+
+	.phone {
+		li {
+			+li {
+				margin: 20px 0 0;
+
+				@include breakpoint(wide) {
+					margin: 6px 0 0;
+				}
+			}
+		}
+
+		+ .social-media {
+			@include breakpoint(tablet) {
+				margin-top: 30px;
+			}
+		}
+	}
+
+	.sitemap {
+		a {
+			display: block;
+			color: $grey;
+			padding: 8px 0;
+			border-top: 1px solid rgba(216, 216, 216, 0.4);
+			
+			@include breakpoint(tablet) {
+				display: inline-block;
+				padding: 0;
+				border: 0;
+			}
+
+			&:focus {
+				color: $yellow;
+			}
+
+			&:hover {
+				@include breakpoint(desktop) {
+					color: $yellow;
+				}
+			}
+		}
+
+		li {
+			&:last-child {
+				a {
+					border-bottom: 1px solid rgba(216, 216, 216, 0.4);
+					
+					@include breakpoint(tablet) {
+						border-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+
+	.social-media {
+		text-align: center;
+
+		@include breakpoint(tablet) {
+			text-align: left;
+		}
+
+		h6 {
+			color: $grey;
+			line-height: 100%;
+			margin: 0 0 10px;
+			display: none;
+
+			@include breakpoint(tablet) {
+				display: block;
+			}
+		}
+
+		a {
+			text-align: center;
+			display: block;
+			color: $dark-black;
+			background-color: $grey;
+			width: 36px;
+			height: 36px;
+			font-size: 1.1em;
+			line-height: 36px;
+			border-radius: 100%;
+			transition: all 0.3s linear;
+		}
+
+		li {
+			margin: 0;
+
+			+ li {
+				margin: 0 0 0 4px;
+			}
+
+			&.facebook {
+				a {
+					&:hover {
+						background-color: $facebook;
+					}
+				}
+			}
+
+			&.youtube {
+				a {
+					&:hover {
+						background-color: $youtube;
+					}
+				}
+			}
+
+			&.instagram {
+				a {
+					&:hover {
+						background: rgb(115,36,193);
+						background: -moz-linear-gradient(212deg, rgba(115,36,193,1) 0%, rgba(196,49,98,1) 50%, rgba(222,148,62,1) 100%);
+						background: -webkit-linear-gradient(212deg, rgba(115,36,193,1) 0%, rgba(196,49,98,1) 50%, rgba(222,148,62,1) 100%);
+						background: linear-gradient(212deg, rgba(115,36,193,1) 0%, rgba(196,49,98,1) 50%, rgba(222,148,62,1) 100%);
+						filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7324c1",endColorstr="#de943e",GradientType=1);
+					}
+				}
+			}
+		}
+
+		a {
+			&:hover {
+				color: $white;
+			}
+		}
+	}
+
+	.copyright {
+		padding: 12px 0;
+		background-color: $black;
+
+		ul {
+			&.flat {
+				li {
+					+ li {
+						margin-left: 8px;
+						padding-left: 12px;
+						
+						@include breakpoint(small-mobile) {
+							margin-left: 6px;
+							padding-left: 10px;	
+						}
+
+						&:before {
+							content: "";
+							width: 1px;
+							height: 12px;
+							background-color: #6F6E6F;
+							position: absolute;
+							top: 1px;
+							bottom: initial;
+							left: 0;
+							right: 0;
+							
+							@include breakpoint(tablet) {
+								height: 16px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		p {
+			margin: 0;
+		}
+
+		a {
+			display: block;
+
+			&:hover {
+				@include breakpoint(desktop) {
+					color: $yellow;
+				}
+			}
+		}
+
+		.text-footer {
+			line-height: 110%;
+			font-size: 0.8em;
+		
+			@include breakpoint(small-mobile) {
+				font-size: 0.75em;
+			}
+
+			@include breakpoint(tablet) {
+				font-size: 0.9em;
+			}
+		}
+	}
+
+}
