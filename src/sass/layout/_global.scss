@@ -1280,6 +1280,7 @@
 		position: relative;
 		border-bottom-color: rgba(255,255,255,0.2);
 		border-radius: 0;
+		cursor: pointer;
 
 		@include breakpoint(tablet) {
 			padding: 20px 30px 22px;
@@ -1338,14 +1339,14 @@
 		}
 
 		p {
-			font-size: 15px;
+			font-size: 17px;
 
 			@include breakpoint(tablet) {
-				font-size: 17px;
+				font-size: 19px;
 			}
 
 			@include breakpoint(wide) {
-				font-size: 18px;
+				font-size: 20px;
 			}
 
 			+ ul,
@@ -1394,26 +1395,26 @@
 		ul,
 		ol {
 			li {
-				font-size: 15px;
+				font-size: 17px;
 				line-height: 120%;
 
 				@include breakpoint(tablet) {
-					font-size: 17px;
+					font-size: 19px;
 				}
 
 				@include breakpoint(wide) {
-					font-size: 18px;
+					font-size: 20px;
 				}
 
 				&::marker {
-					font-size: 15px;
+					font-size: 17px;
 
 					@include breakpoint(tablet) {
-						font-size: 17px;
+						font-size: 19px;
 					}
 
 					@include breakpoint(wide) {
-						font-size: 18px;
+						font-size: 20px;
 					}
 				}
 
