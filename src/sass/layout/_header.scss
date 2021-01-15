@@ -39,7 +39,7 @@ body {
 						&:focus,
 						&:hover {
 							@include breakpoint(desktop) {
-								color: $yellow;
+								// color: $yellow;
 							}
 						}
 					}
@@ -137,7 +137,7 @@ body {
 			}
 
 			&:hover {
-				@include breakpoint(tablet) {
+				@include breakpoint(desktop) {
 					color: $yellow;
 				}
 			}
@@ -282,16 +282,14 @@ body {
 				&:focus,
 				&:hover {
 					@include breakpoint(desktop) {
-						color: $yellow;
-						border-color: yellow;
+						color: $white;
+						border-color: $yellow;
 					}
 				}
 
 				&.active {
-					@include breakpoint(wide) {
-						color: $yellow;
-						border-color: yellow;
-					}
+					color: $yellow;
+					border-color: $yellow;
 				}
 			}
 		}
