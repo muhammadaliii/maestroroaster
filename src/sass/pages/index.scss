@@ -127,6 +127,7 @@
 		transform: translate(-50%, 0px);
 		
 		@include breakpoint(wide) {
+			width: 100%;
 			height: auto;
 		}
 	}
